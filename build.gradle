@@ -71,7 +71,9 @@ repositories {
         url 'https://jitpack.io'
     }
 }
-
+configurations.all {
+    exclude module: 'slf4j-nop'
+}
 dependencies {
     preshadow 'com.github.replaymod.viaversion:viaversion-common:5af7155'
 
